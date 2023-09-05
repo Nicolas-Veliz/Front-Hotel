@@ -1,0 +1,27 @@
+footer{
+    background-color:  #345b89;
+}
+
+p a{
+    margin: 0px;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+}
+
+.text-white{
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Lora', serif;
+    text-decoration: none;
+}
+
+col {
+    width: 100%;
+    padding-bottom: 1em;
+}
+a #img{
+    height: 0px;
+    width: 0px;
+}
