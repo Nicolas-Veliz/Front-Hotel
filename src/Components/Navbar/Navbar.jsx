@@ -39,7 +39,7 @@ const Navegador = () => {
                         <Container>
                             <Row>
                                 <Col xs={6} md={3}>
-                                    <Image src="src\assets\img\logo.jpg" rounded />
+                                    <Image src="src\assets\img\Logo Hotel.jpg" rounded />
                                 </Col>
                             </Row>
                         </Container>
