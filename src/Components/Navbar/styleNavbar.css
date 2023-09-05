@@ -1,0 +1,26 @@
+nav.navbar{
+    background-color:  #345b89;
+}
+
+img {
+    height: 110%;
+    width: 150%;
+    align-items: center;
+}
+
+#navbarDropdown1{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+}
+
+#navbarDropdown2{
+    color: white;
+    text-justify: center;
+}
+
+a.action.nav-link{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+}
