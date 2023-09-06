@@ -27,6 +27,12 @@ a #img{
     width: 0px;
 }
 
+img{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
+
 /*/ social networks /*/
 
 .social-links {
