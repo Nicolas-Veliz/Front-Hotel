@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './../Footer/styleFooter.css';
 
-function PiedePagina() {
+function Footer() {
   return (
     <footer className='text-center text-white'>
     <Container>
@@ -11,6 +11,33 @@ function PiedePagina() {
         <Col md="4" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <p><a href="#!" className='text-center text-white'>Politicas generales del hotel</a></p>
+        <p><a href="#!" className='text-center text-white'>Seguinos en nuestras redes sociales:</a></p>
+        <div class="footer-bottom">
+                    <div class='social-links'>
+                        <ul>
+                            <li>
+                                <a href="#" title="Instagram">
+                                    <img src="src\assets\img\red social\instagram.svg" alt='Instagram'/>                       
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Linkedin">
+                                    <img src="src\assets\img\red social\linkedin.svg" alt='Linkedin'/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Twitter">
+                                    <img src="src\assets\img\red social\twitter.svg" alt='Twitter'/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Youtube">
+                                    <img src="src\assets\img\red social\youtube.svg" alt='YouTube'/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </Col>
         <Col md="4" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
@@ -46,4 +73,4 @@ function PiedePagina() {
   );
 }
 
-export default PiedePagina;
+export default Footer;

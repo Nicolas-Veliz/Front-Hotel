@@ -21,7 +21,58 @@ col {
     width: 100%;
     padding-bottom: 1em;
 }
+
 a #img{
     height: 0px;
     width: 0px;
+}
+
+/*/ social networks /*/
+
+.social-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.social-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.social-links ul {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+}
+
+/*/ mobile /*/
+
+@media (max-width: 800px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px 8px 32px 8px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
