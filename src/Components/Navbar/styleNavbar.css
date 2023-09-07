@@ -38,3 +38,12 @@ a.action.nav-link{
     margin-right: 20px;
 }
 
+#navbarDropdown2{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+    margin-top: 30px;
+    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
