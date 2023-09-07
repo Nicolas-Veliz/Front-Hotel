@@ -1,26 +1,40 @@
+nav.navbar-brand{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+    margin-top: 30px;
+    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
 nav.navbar{
     background-color:  #345b89;
 }
 
-img {
-    height: 110%;
-    width: 150%;
-    align-items: center;
-}
-
-#navbarDropdown1{
-    text-justify: center;
-    white-space: pre;
-    color: white;
-}
-
-#navbarDropdown2{
-    color: white;
-    text-justify: center;
+img{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
 }
 
 a.action.nav-link{
     text-justify: center;
     white-space: pre;
     color: white;
+    margin-top: 30px;
+    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+#navbarDropdown1{text-justify: center;
+    white-space: pre;
+    color: white;
+    margin-top: 30px;
+    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
