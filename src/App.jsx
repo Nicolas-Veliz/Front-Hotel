@@ -1,6 +1,6 @@
-import Navbar from './Components/Navbar/Navbar'
-import Carousel from './Components/Carousel/Carousel'
-import Footer from './Components/Footer/Footer'
+import {Carousel} from 'react-bootstrap';
+import Navbar from './Components/Navbar/Navbar';
+import './Components/Carousel/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
       <div>
         <Navbar />
         <Carousel />
-        <Footer />
+        
       </div>
     </>
   )
 }
 
-export default App
+export default App;
