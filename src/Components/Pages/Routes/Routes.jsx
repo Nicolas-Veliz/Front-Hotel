@@ -1,6 +1,6 @@
 import {Route, Routes as Ruta} from 'react-router-dom'
 import Home from '../home/Home.jsx'
-import About from "../About/About.jsx";
+import About from '../About/About.jsx';
 
 const Routes = () => {
   return (

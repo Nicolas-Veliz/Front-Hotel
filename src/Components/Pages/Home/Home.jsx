@@ -5,6 +5,7 @@ const Home = () => {
     return (
         <>
             <Carousel />
+            
             <br />
             <Container>
                 <div className='container-fluid'>

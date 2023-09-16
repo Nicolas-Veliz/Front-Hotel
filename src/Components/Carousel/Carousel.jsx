@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './../Carousel/style.css'
+import './../Carousel/Carousel.jsx'
 
 
 function Carrusel() {
