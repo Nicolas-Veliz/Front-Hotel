@@ -1,16 +1,16 @@
-import {Routes, Route } from 'react-router-dom'
-import Home from 'src\Components\Pages\Home\Home.jsx'
-
+import {Route, Routes as Ruta} from 'react-router-dom'
+import Home from '../home/Home.jsx'
+import About from "../About/About.jsx";
 
 const Routes = () => {
   return (
     <>
-    <Routes>
+    <Ruta>
       <Route path='/' element={<Home />} />
-      
-    </Routes>
+      <Route path='/About' element={< About/>}/>
+    </Ruta>
     </>
   )
 }
 
-export default Routes
+export default Routes;
