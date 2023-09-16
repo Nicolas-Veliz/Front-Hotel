@@ -28,7 +28,8 @@ a.action.nav-link{
     margin-right: 20px;
 }
 
-#navbarDropdown1{text-justify: center;
+#navbarDropdown1{
+    text-justify: center;
     white-space: pre;
     color: white;
     margin-top: 30px;
@@ -45,4 +46,18 @@ a.action.nav-link{
     justify-items: center;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.btn{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+    margin-top: 10px;
+    justify-items: center;
+    /*margin-left: 10px;*/
+    margin-right: 10px;
+}
+.navbar-collapse{
+    margin-right: 100px;
+    margin-left: 100px;
 }

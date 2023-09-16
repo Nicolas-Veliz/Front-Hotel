@@ -47,7 +47,7 @@ const Navegador = () => {
                         <Nav.Link className='action' href="#action8">Nosotros</Nav.Link>
                         <Nav.Link className='action' href="#action9">Contactos</Nav.Link>
                     </Nav>
-                    <button type="button" class="btn btn-outline-light">Iniciar Sesion/Registrarse</button>
+                    <button type="button" class="btn btn-outline-light">Acceder/Registrarse</button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
