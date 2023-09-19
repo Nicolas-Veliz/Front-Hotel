@@ -4,8 +4,8 @@ import Col from 'react-bootstrap';
 import Row from 'react-bootstrap';
 import Button from 'react-bootstrap';
 import Card from 'react-bootstrap';
-import '../Contact/styleContact.css';
-import './../../Map/Map'
+import './styleContact.css';
+import '../../Components/Map/Map'
 import useFormik from 'formik';
 import * as Yup from 'yup';
 import { clsx } from 'clsx';
