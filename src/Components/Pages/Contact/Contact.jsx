@@ -1,11 +1,16 @@
-import { Form, FloatingLabel, Col, Row, Button, Card } from 'react-bootstrap';
-import './../Contact/styleContact.css';
-import MapaTucuman from './../Map/Map.jsx';
-import { useFormik } from 'formik';
+import Form from 'react-bootstrap';
+import FloatingLabel from 'react-bootstrap';
+import Col from 'react-bootstrap';
+import Row from 'react-bootstrap';
+import Button from 'react-bootstrap';
+import Card from 'react-bootstrap';
+import '../Contact/styleContact.css';
+import './../../Map/Map'
+import useFormik from 'formik';
 import * as Yup from 'yup';
 import { clsx } from 'clsx';
 
-const Contact= () => {
+const Contact = () => {
     const ContactoSchema = Yup.object().shape({
         nombreApellido: Yup.string().required('Campo requerido').max(40, 'maximo 40 caracteres'),
         email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido').max(30, 'maximo 30 caracteres').min(5, 'minimo 5 caracteres'),
@@ -35,7 +40,7 @@ const Contact= () => {
     return (
         <div className='form-container d-flex flex-column align-items-center'>
             <h2 className='mb-4 text-white'>Aquí estamos!</h2>
-            <MapaTucuman />
+            <MapTucuman />
 
             <div className='logo-container text-center'>
                 <img
