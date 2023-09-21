@@ -9,11 +9,13 @@ function App() {
 
   return (
     <>
-      
-      <Navbar />
-      <Routes />
-      <Footer />
-      
+      <UserContext>
+        <InventoryContext>
+          <Navbar />
+          <Routes />
+          <Footer />
+        </InventoryContext>
+      </UserContext>
     </>
   );
 }
