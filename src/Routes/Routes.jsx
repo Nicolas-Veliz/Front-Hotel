@@ -1,6 +1,6 @@
 import {Route, Routes as Ruta} from 'react-router-dom'
 import Home from '../Pages/Home/Home.jsx'
-import About from "../Pages/About/About.jsx";
+import About from '../Pages/About/About.jsx';
 import Contact from '../Pages/Contact/Contact.jsx';
 
 const Routes = () => {

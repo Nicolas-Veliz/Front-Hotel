@@ -1,9 +1,11 @@
 {
     "usuarios": [
     {
-        "nombre": "lfa",
-        "email": "lfa@lfa.com",
-        "contraseña": "123",
+        "nombre": "nico",
+        "apellido": "veliz",
+        "email": "nico@nico.com",
+        "contraseña": "123456",
+        "rol": "administrador",
         "id": 1
     }
     ],

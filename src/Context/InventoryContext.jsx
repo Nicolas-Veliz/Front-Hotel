@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-import { createContext, useEffect, useState } from "react"
-import axios from "axios"
+import { createContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export const ContextoInventario = createContext()
 
