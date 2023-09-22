@@ -12,8 +12,8 @@ function Footer() {
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <p><a href="#!" className='text-center text-white'>Politicas generales del hotel</a></p>
         <p><a href="#!" className='text-center text-white'>Seguinos en nuestras redes sociales:</a></p>
-        <div class="footer-bottom">
-                    <div class='social-links'>
+        <div className="footer-bottom">
+                    <div className='social-links'>
                         <ul>
                             <li>
                                 <a href="#" title="Instagram">
@@ -65,7 +65,7 @@ function Footer() {
     </Container>
     <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
     © 2023 Copyright:
-    <a className='text-white' href='https://rollingcodeschool.com/'> <></>
+    <a className='text-white' href='https://rollingcodeschool.com/'>
     RollingCodeSchool.com
     </a>
   </div>
