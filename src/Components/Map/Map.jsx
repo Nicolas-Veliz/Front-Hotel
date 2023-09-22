@@ -2,7 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer } from 'https://cdn.esm.sh/react-leaflet'
 import 'leaflet/dist/leaflet.css';
 
-const MapTucuman = () => {
+const Map= () => {
   return (
     <MapContainer
       center={[-26.8081, -65.2176]} // Coordenadas de Tucumán
@@ -17,4 +17,4 @@ const MapTucuman = () => {
   );
 };
 
-export default MapTucuman;
+export default Map;

@@ -1,12 +1,12 @@
-import Form from 'react-bootstrap';
-import FloatingLabel from 'react-bootstrap';
-import Col from 'react-bootstrap';
-import Row from 'react-bootstrap';
-import Button from 'react-bootstrap';
-import Card from 'react-bootstrap';
+import {Form } from 'react-bootstrap';
+import {FloatingLabel} from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import './styleContact.css';
 import '../../Components/Map/Map'
-import useFormik from 'formik';
+import {useFormik} from 'formik';
 import * as Yup from 'yup';
 import { clsx } from 'clsx';
 
@@ -40,11 +40,11 @@ const Contact = () => {
     return (
         <div className='form-container d-flex flex-column align-items-center'>
             <h2 className='mb-4 text-white'>Aquí estamos!</h2>
-            <MapTucuman />
+            <Map/>
 
             <div className='logo-container text-center'>
                 <img
-                    src='../../../public/img/logo_RHR (1).jpg' // Ruta a tu imagen de logo
+                    src='./img/logo_RHR (1).jpg' // Ruta a tu imagen de logo
                     alt='Logo del hotel'
                     className='logo-img'
                 />
