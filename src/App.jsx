@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar/Navbar';
-
-import Routes from './routes/Routes.jsx';
+import Routes from './Routes/Routes.jsx';
 
 
 
