@@ -1,5 +1,6 @@
 import Carousel from "../../Carousel/Carousel.jsx"
-import Container from "react-bootstrap"
+import { Link } from "react-router-dom"
+import {Container} from "react-bootstrap";
 
 const Home = () => {
     return (

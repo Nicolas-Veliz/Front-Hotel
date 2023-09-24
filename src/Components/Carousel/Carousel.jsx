@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+
 import './../Carousel/style.css'
 import './../Carousel/Carousel.jsx'
 
@@ -12,30 +13,30 @@ function Carrusel() {
           <img 
             className="d-block w-100"
             src='src\assets\img\Frente Hotel.jpg'
-            alt='Primer slider'
+            alt='Imagen Frente Hotel'
           />
           <Carousel.Caption>
-          <Formulario show={show} onHide={() => setShow(false)} />
+          
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img 
             className="d-block w-100"
             src='src\assets\img\Habitacion Hotel.jpg'
-            alt='Segundo slider'
+            alt='Imagen Habitacion Hotel'
           />
           <Carousel.Caption>
-          <Formulario show={show} onHide={() => setShow(false)} />
+          
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img 
             className="d-block w-100"
-            src='src\assets\img\Restaurante Hotel.jpeg'
-            alt='Tercer slider'
+            src='src\assets\img\Restaurante Hotel.jpg'
+            alt='Imagen Restaurante Hotel'
           />
           <Carousel.Caption>
-          <Formulario show={show} onHide={() => setShow(false)} />
+          
         </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
