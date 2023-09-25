@@ -43,16 +43,16 @@ const Contact = () => {
             <Map/>
             <div className='logo-container text-center'>
                 <img
-                    src='./img/logo_RHR (1).jpg' // Ruta a tu imagen de logo
+                    src='#' // Ruta a tu imagen de logo
                     alt='Logo del hotel'
                     className='logo-img'
                 />
             </div>
             <h3 className='mb-4 text-white'>Escribinos</h3>
-            <Form className='w-75' onSubmit={formik.handleSubmit} noValidte>
+            <Form className='w-75' onSubmit={formik.handleSubmit}>
                 <Row className="mb-3">
                     <Col md={6}>
-                        <Form.Group controlId="nombreApellido">
+                        <Form.Group id="nombreApellido">
                             <Form.Control
                                 type="text"
                                 id="nombreApellido"
@@ -83,7 +83,7 @@ const Contact = () => {
                         </Form.Group>
                     </Col>
                     <Col md={6}>
-                        <Form.Group controlId="email">
+                        <Form.Group id="email">
                             <Form.Control
                                 type="email"
                                 placeholder="Ingresar Email"
@@ -116,7 +116,7 @@ const Contact = () => {
                     </Col>
                 </Row>
 
-                <Form.Group controlId="telefono" className="mb-3">
+                <Form.Group id="telefono" className="mb-3">
                     <Form.Control
                         type="tel"
                         id="telefono"
@@ -148,7 +148,7 @@ const Contact = () => {
                     )}
                 </Form.Group>
 
-                <Form.Group controlId="motivo" className="mb-3">
+                <Form.Group id="motivo" className="mb-3">
                     <Form.Control
                         as="select"
                         placeholder="Motivo"
@@ -165,8 +165,8 @@ const Contact = () => {
                     </Form.Control>
                 </Form.Group>
 
-                <Form.Group controlId="comentario" className="mb-3">
-                    <FloatingLabel controlId="floatingTextarea2" label="Su Comentario">
+                <Form.Group id="comentario" className="mb-3">
+                    <FloatingLabel id="floatingTextarea2" label="Su Comentario">
                         <Form.Control
                             as="textarea"
                             style={{ height: '200px' }}
