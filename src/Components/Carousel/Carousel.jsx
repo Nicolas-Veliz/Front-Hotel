@@ -14,7 +14,7 @@ function Carrusel() {
             alt='Primer slider'
           />
           <Carousel.Caption>
-          <Formulario show={show} onHide={() => setShow(false)} />
+          
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -24,7 +24,7 @@ function Carrusel() {
             alt='Segundo slider'
           />
           <Carousel.Caption>
-          <Formulario show={show} onHide={() => setShow(false)} />
+         
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -34,7 +34,7 @@ function Carrusel() {
             alt='Tercer slider'
           />
           <Carousel.Caption>
-          <Formulario show={show} onHide={() => setShow(false)} />
+          
         </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

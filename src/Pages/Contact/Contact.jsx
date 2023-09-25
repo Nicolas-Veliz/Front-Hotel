@@ -5,7 +5,7 @@ import {Row} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {Card} from 'react-bootstrap';
 import './styleContact.css';
-import '../../Components/Map/Map'
+import Map from '../../Components/Map/Map'
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
 import { clsx } from 'clsx';
@@ -41,7 +41,6 @@ const Contact = () => {
         <div className='form-container d-flex flex-column align-items-center'>
             <h2 className='mb-4 text-white'>Aquí estamos!</h2>
             <Map/>
-
             <div className='logo-container text-center'>
                 <img
                     src='./img/logo_RHR (1).jpg' // Ruta a tu imagen de logo
