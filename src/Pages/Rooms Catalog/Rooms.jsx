@@ -1,6 +1,6 @@
 import Tarjetas from "../../Componentes/Tarjetas/Tarjetas"
 
-import './styleHabitaciones.css'
+import '../../Pages/Rooms Catalog/styleRooms.css'
 
 
 const Rooms = () => {
