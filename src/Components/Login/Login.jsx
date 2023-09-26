@@ -5,9 +5,9 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { UsuariosContext } from '../../Contexto/UserContext';
-import './../InicioDeSesion/styleInicioDeSesion.css';
+import '../../Components/Login/styleLogin.css';
 
-function InicioDeSesion() {
+function Login() {
   const { usuarios } = useContext(UsuariosContext);
 
   const LoginFormSchema = Yup.object().shape({
@@ -125,4 +125,4 @@ function InicioDeSesion() {
   );
 }
 
-export default InicioDeSesion;
+export default Login;
