@@ -1,13 +1,12 @@
 import { Container, Row, Col, Image, Table } from 'react-bootstrap';
 import { useContext, useState } from 'react'
 import { ContextoInventario } from './../../../Contexto/ContextoDeInventario'
-import Formulario from '../../../Componentes/Reserva/Formulario';
-import './../Descripcion/styleDescripcion.css';
+import Form from '../../../Components/Booking/Form.jsx';
 import { useParams } from 'react-router-dom';
 import { alignPropType } from 'react-bootstrap/esm/types';
 import { text } from '@fortawesome/fontawesome-svg-core';
 
-const Descripcion = () => {
+const Descriptions = () => {
   
   const {id} = useParams();
   const {inventario} = useContext(ContextoInventario)
@@ -76,4 +75,4 @@ const Descripcion = () => {
   )
 }
 
-export default Descripcion
+export default Descriptions;
