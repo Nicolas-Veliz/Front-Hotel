@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
-import axios from 'axios'
+import axios from 'axios';
 import { createContext, useEffect, useState } from 'react'
 
-export const UsuariosContext = createContext()
+export const UserContext = createContext()
 
-const UserContext = ({ children }) => {
+const User = ({ children }) => {
     const [usuarios, setUsuarios] = useState([])
 
     const getUsuarios = async () => {
@@ -27,10 +26,10 @@ const UserContext = ({ children }) => {
     }, [])
 
     return (
-        <UsuariosContext.Provider value={{ usuarios, setUsuarios, cerrarSesion }}>
+        <UserContext.Provider value={{ usuarios, setUsuarios, cerrarSesion }}>
             {children}
-        </UsuariosContext.Provider>
+        </UserContext.Provider>
     )
 }
 
-export default UserContext
+export default User;

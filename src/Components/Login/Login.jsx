@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { UsuariosContext } from '../../Contexto/UserContext';
+import { UserContext } from '../../Context/UserContext';
 import '../../Components/Login/styleLogin.css';
 
 function Login() {
-  const { usuarios } = useContext(UsuariosContext);
+  const { usuarios } = useContext(UserContext);
 
   const LoginFormSchema = Yup.object().shape({
     email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido'),
