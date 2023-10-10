@@ -1,29 +1,29 @@
 import axios from 'axios';
-import { createContext, useEffect, useState } from 'react'
+import { createContext, useEffect, useState } from 'react';
 
-export const InventoryContext = createContext()
+export const UserContext = createContext(); // Cambiado a UserContext
 
-const UserContext = ({ children }) => {
-    const [usuarios, setUsuarios] = useState([])
+const UserContextProvider = ({ children }) => { // Cambiado a UserContextProvider
+    const [usuarios, setUsuarios] = useState([]);
 
     const getUsuarios = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/usuarios")
-            console.log(response, "response context")
-            setUsuarios(response.data)
+            const response = await axios.get("http://localhost:3000/usuarios");
+            console.log(response, "response context");
+            setUsuarios(response.data);
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
     }
 
     const cerrarSesion = () => {
-        localStorage.removeItem("usuario")
-        window.location.href = "/InicioDeSesion"
+        localStorage.removeItem("usuario");
+        window.location.href = "/Login";
     }
 
     useEffect(() => {
-        getUsuarios()
-    }, [])
+        getUsuarios();
+    }, []);
 
     return (
         <UserContext.Provider value={{ usuarios, setUsuarios, cerrarSesion }}>
@@ -32,4 +32,4 @@ const UserContext = ({ children }) => {
     )
 }
 
-export default User;
+export default UserContextProvider; // Cambiado a UserContextProvider

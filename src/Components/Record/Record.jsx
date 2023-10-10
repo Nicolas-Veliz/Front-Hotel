@@ -148,7 +148,7 @@ const Record = () => {
                                             <Nav.Item as='li'>
                                                 <Form.Label>
                                                     Si ya posee una cuenta
-                                                    <Nav.Link eventKey='link-1' href='/InicioDeSesion'>
+                                                    <Nav.Link eventKey='link-1' href='/Login'>
                                                         ...ir a iniciar sesión
                                                     </Nav.Link>
                                                 </Form.Label>

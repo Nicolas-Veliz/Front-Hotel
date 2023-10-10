@@ -106,7 +106,7 @@ function Login() {
                       <Nav.Item as='li'>
                         <Form.Label>
                           Si no posee una cuenta
-                          <Nav.Link eventKey='link-1' href='/Registro'>
+                          <Nav.Link eventKey='link-1' href='/Record'>
                             ...ir a Registrarse
                           </Nav.Link>
                         </Form.Label>

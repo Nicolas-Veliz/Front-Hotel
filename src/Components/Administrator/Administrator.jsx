@@ -1,7 +1,6 @@
 import { Button, Modal, Container, Table, Tabs, Tab, Form } from 'react-bootstrap';
 import { useContext, useState } from 'react'
-import { InventoryContext } from '../../Context/InventoryContext.jsx'
-import { UserContext } from '../../Context/UserContext'
+
 import axios from 'axios'
 
 
@@ -129,9 +128,11 @@ const Administrator = () => {
                                     <th>Nombre</th>
                                     <th>Número</th>
                                     <th>Precio</th>
-                                    <td><Button variant="primary" onClick={handleShow}>
+                                    <td>
+                                        <Button variant="primary" onClick={handleShow}>
                                         Agregar
-                                    </Button></td>
+                                        </Button>
+                                    </td>
                                 </tr>
                             </thead>
                             <Modal show={show} onHide={handleClose}>
