@@ -54,8 +54,8 @@ a.action.nav-link{
     color: white;
     margin-top: 10px;
     justify-items: center;
-    /*margin-left: 10px;*/
-    margin-right: 10px;
+    margin-left: 80px;
+    margin-right: 0px;
 }
 .navbar-collapse{
     margin-right: 100px;
