@@ -1,14 +1,11 @@
-import {Form } from 'react-bootstrap';
-import {FloatingLabel} from 'react-bootstrap';
-import {Col} from 'react-bootstrap';
-import {Row} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
-import {Card} from 'react-bootstrap';
+
+import React from 'react';
+import { Form, FloatingLabel, Col, Row, Button, Card } from 'react-bootstrap';
 import './styleContact.css';
 import Map from '../../Components/Map/Map'
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
-import { clsx } from 'clsx';
+import  clsx  from 'clsx';
 
 const Contact = () => {
     const ContactoSchema = Yup.object().shape({
