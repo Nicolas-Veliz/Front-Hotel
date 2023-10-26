@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Form, Card, Nav } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon }  from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';

@@ -1,25 +1,24 @@
-import { Button, Modal, Container, Table, Tabs, Tab, Form } from 'react-bootstrap';
-import { useContext, useState } from 'react'
+import { Button, Modal, Container, Table, Tabs, Tab, Form } from "react-bootstrap";
+import { useContext, useState } from "react";
 
-import axios from 'axios'
+import { UserContext } from '../../Context/UserContext';
+import axios from 'axios';
 
 
 const Administrator = () => {
-
-    const { inventario } = useContext(InventoryContext)
-    console.log(inventario, "inventario")
-    const { usuarios } = useContext(UserContext)
+    const { inventory } = useContext(InventoryContext);
+    console.log(inventory, "inventory")
+    const { usuarios } = useContext(UserContext);
     console.log(usuarios, "usuarios")
 
-    //Llamar a Modal
+    // Llamar a Modal
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    //Agregar una Habitacion
-
-    const [habitacion, setHabitaciones] = useState({
+    // Agregar una Habitación
+    const [habitacion, setHabitacion] = useState({
         nombre: "",
         numero: "",
         precio: "",
@@ -27,42 +26,33 @@ const Administrator = () => {
         img1: "",
         img2: "",
         img3: "",
-    })
+    });
 
     const handleChange = (e) => {
-        setHabitaciones({
+        setHabitacion({
             ...habitacion,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
         });
-    }
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const respuesta = await axios.post("http://localhost:3000/inventario",
-                habitacion
-            )
-            console.log(respuesta, "Respuesta de habitaciones")
+            const respuesta = await axios.post("http://localhost:3000/inventario", habitacion);
+            console.log(respuesta.data, "Respuesta de habitaciones"); // Acceso a respuesta.data en lugar de respuesta
         } catch (error) {
-            console.log(error, "Error de habitaciones")
+            console.error(error, "Error de habitaciones"); // Usar console.error para errores
         }
-    }
+    };
 
     return (
         <body data-bs-theme="dark" style={{ height: '94vh' }}>
             <Container data-bs-theme="dark">
-
-                <h1 className="text-center" style={{ padding: '50px' }} >Panel de Administrador</h1>
-                <Tabs
-                    defaultActiveKey="profile"
-                    id="justify-tab-example"
-                    className="mb-3"
-                    data-bs-theme="dark"
-                    justify
-                >
+                <h1 className="text-center" style={{ padding: '50px'}}>Panel de Administrador</h1>
+                <Tabs defaultActiveKey="Reservas" id="justify-tab-example" className="mb-3" data-bs-theme="dark" justify>
                     <Tab eventKey="Reservas" title="Reservas">
-                        <>
+                    <>
                             <Table responsive="sm" data-bs-theme="dark">
                                 <thead>
                                     <tr>
@@ -89,8 +79,8 @@ const Administrator = () => {
                             </Table>
                         </>
                     </Tab>
-                    <Tab eventKey="Usuarios" title="Usuarios" key={usuarios.id}>
-                        <Table responsive="sm" data-bs-theme="dark" >
+                    <Tab eventKey="Usuarios" title="Usuarios">
+                    <Table responsive="sm" data-bs-theme="dark" >
                             <thead>
                                 <tr>
                                     <th>id</th>
@@ -120,9 +110,9 @@ const Administrator = () => {
                                 ))}
                         </Table>
                     </Tab>
-                    <Tab eventKey="Habitaciones" title="Habitaciones" key={inventario.id}>
+                    <Tab eventKey="Habitaciones" title="Habitaciones">
                         <Table responsive="sm" data-bs-theme="dark">
-                            <thead >
+                        <thead >
                                 <tr>
                                     <th>id</th>
                                     <th>Nombre</th>
@@ -135,14 +125,15 @@ const Administrator = () => {
                                     </td>
                                 </tr>
                             </thead>
-                            <Modal show={show} onHide={handleClose}>
-                                <Modal.Header closeButton>
-                                    <Modal.Title>Inventario de Habitaciones</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    <Container>
-                                        <Form onSubmit={handleSubmit}>
-                                            <div className="mb-3">
+                        </Table>
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Inventario de Habitaciones</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <Container>
+                                    <Form onSubmit={handleSubmit}>
+                                    <div className="mb-3">
                                                 <label htmlFor="selectToastPlacement" className="form-label">
                                                     Nombre
                                                 </label>
@@ -247,14 +238,11 @@ const Administrator = () => {
                                                     </Button>
                                                 </Modal.Footer>
                                             </div>
-                                        </Form>
-                                    </Container>
-                                </Modal.Body>
-                            </Modal>
-
-
-
-                            {inventario === undefined ?
+                                    </Form>
+                                </Container>
+                            </Modal.Body>
+                        </Modal>
+                        {inventario === undefined ?
                                 "No Hay habitaciones disponibles" :
                                 inventario.map((inventario) => (
                                     <>
@@ -272,8 +260,6 @@ const Administrator = () => {
                                         </tbody>
                                     </>
                                 ))}
-                        </Table>
-
                     </Tab>
                     <Tab eventKey="contact" title="Contact" disabled>
                         Tab content for Contact
