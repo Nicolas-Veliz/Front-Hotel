@@ -1,15 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './Components/Navbar/Navbar'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Routes from './Components/Pages/Routes/Routes.jsx';
+
+
 
 function App() {
-  
+
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
+      
+      <Navbar />
+      <Routes />;
+      
     </>
-  )
+  );
 }
 
 export default App
