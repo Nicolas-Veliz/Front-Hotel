@@ -1,0 +1,30 @@
+.carrousel.item{
+    height: 0px;
+    width: 900px;
+}
+
+.d-block{
+    height: 500px;
+    width: 900%;
+    margin-top: 0px;
+}
+
+div.contenedorC{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.d-block.w-100{
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .d-block {
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .d-block {
+        height: 300px;
+    }
+}
