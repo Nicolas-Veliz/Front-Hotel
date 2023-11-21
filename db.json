@@ -1,0 +1,36 @@
+{
+    "usuarios": [
+    {
+        "nombre": "nico",
+        "apellido": "veliz",
+        "email": "nico@nico.com",
+        "contraseña": "123456",
+        "rol": "administrador",
+        "id": 1
+    }
+    ],
+    "inventario": [
+    {
+        "nombre": "Simple",
+        "numero": "202",
+        "precio": "1600",
+  
+        "descripcion": "-Wifi -Desayuno",
+        "img1": "https://i.pinimg.com/originals/b1/4a/5c/b14a5c75fdea580ce439a14eec5d6a42.jpg",
+        "img2": "https://images.ecestaticos.com/G8-gUJ6nZX44fmN3KoIDwja5b_I=/239x71:2026x1410/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fdf5%2Ff64%2F3c6%2Fdf5f643c69ab51813e984c20a2d0228e.jpg",
+        "img3": "https://www.elmueble.com/medio/2020/10/13/00406257-2_9cf8acf6_1000x1430.jpg",
+        "id": "1"
+    },
+    {
+        "nombre": "Doble",
+        "numero": "203",
+        "precio": "1800",
+  
+        "descripcion": "-Wifi -Desayuno",
+        "img1": "https://www.elmueble.com/medio/2020/10/13/00406257-2_9cf8acf6_1000x1430.jpg",
+        "img2":"https://i.pinimg.com/originals/b1/4a/5c/b14a5c75fdea580ce439a14eec5d6a42.jpg",
+        "img3": "https://www.elmueble.com/medio/2020/10/13/00406257-2_9cf8acf6_1000x1430.jpg",
+        "id": "2"
+    }        
+    ]
+}

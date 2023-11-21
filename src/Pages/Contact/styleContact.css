@@ -1,0 +1,29 @@
+.form-container {
+  background-image: url("../../../public/img/cornerstone-header-bg.jpg"); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-button {
+  background-color: #007bff; /* Color de fondo del botón */
+  border-color: #007bff; /* Color del borde del botón */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  border-radius: 5px; /* Radio de borde */
+  color: white; /* Color del texto del botón */
+  font-weight: bold; /* Grosor del texto del botón */
+  transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.custom-button:hover {
+  background-color: #00a4b3; /* Color de fondo del botón al pasar el mouse */
+  border-color: #060c5c; /* Color del borde del botón al pasar el mouse */
+}
+
+.logo-container {
+  margin-bottom: 20px; /* Espaciado desde el logo */
+}
+
+.logo-img {
+  max-width: 250px; /* Tamaño máximo del logo */
+}
