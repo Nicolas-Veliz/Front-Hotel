@@ -1,11 +1,12 @@
-import Carousel from "../../Components/Carousel/Carousel.jsx";
+import Carousel from "../../Carousel/Carousel.jsx"
+import { Link } from "react-router-dom"
 import {Container} from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <>
             <Carousel />
+            
             <br />
             <Container>
                 <div className='container-fluid'>
