@@ -1,15 +1,15 @@
-import { Button, Modal, Container, Table, Tabs, Tab, Form } from 'react-bootstrap';
-import { useContext, useState } from 'react'
-import { InventoryContext } from 'src/Context/InventoryContext.jsx'
-import { UsuariosContext } from '../../Contexto/UserContext'
+import { Button, Modal, Container, Table, Tabs, Tab, Form } from "react-bootstrap";
+import { useState } from "react"
+import { useContext } from 'react'
+import { ContextoInventario } from '../../Context/InventoryContext';
+import { UserContext } from '../../Context/UserContext'
 import axios from 'axios'
-
 
 const Administrator = () => {
 
-    const { inventario } = useContext(InventoryContext)
+    const { inventario } = useContext(ContextoInventario)
     console.log(inventario, "inventario")
-    const { usuarios } = useContext(UsuariosContext)
+    const { usuarios } = useContext(UserContext)
     console.log(usuarios, "usuarios")
 
     //Llamar a Modal
@@ -284,3 +284,4 @@ const Administrator = () => {
 }
 
 export default Administrator;
+
