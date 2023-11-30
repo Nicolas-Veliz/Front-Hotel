@@ -6,10 +6,10 @@ import UserContext from './Context/UserContext';
 import InventoryContext from './Context/InventoryContext'
 
 
+
 function App() {
   return (
     <>
-
       <UserContext>
         <InventoryContext>
           <Navbar />
