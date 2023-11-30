@@ -1,14 +1,11 @@
-import {Form } from 'react-bootstrap';
-import {FloatingLabel} from 'react-bootstrap';
-import {Col} from 'react-bootstrap';
-import {Row} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
-import {Card} from 'react-bootstrap';
+
+import React from 'react';
+import { Form, FloatingLabel, Col, Row, Button, Card } from 'react-bootstrap';
 import './styleContact.css';
 import Map from '../../Components/Map/Map'
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
-import { clsx } from 'clsx';
+import  clsx  from 'clsx';
 
 const Contact = () => {
     const ContactoSchema = Yup.object().shape({
@@ -41,14 +38,8 @@ const Contact = () => {
         <div className='form-container d-flex flex-column align-items-center'>
             <h2 className='mb-4 text-white'>Aquí estamos!</h2>
             <Map/>
-            <div className='logo-container text-center'>
-                <img
-                    src='#' // Ruta a tu imagen de logo
-                    alt='Logo del hotel'
-                    className='logo-img'
-                />
-            </div>
-            <h3 className='mb-4 text-white'>Escribinos</h3>
+            <h1 className='mb-4 text-white'>Contáctanos</h1>
+            <h4 className='mb-4 text-white'>¿Tienes alguna pregunta? Por favor, no dude en contactarnos. Nuestro equipo se comunicará para ayudarte a la brevedad.</h4>
             <Form className='w-75' onSubmit={formik.handleSubmit}>
                 <Row className="mb-3">
                     <Col md={6}>
@@ -181,7 +172,7 @@ const Contact = () => {
 
                 <div className='text-center'>
                     <Button className='custom-button' variant='primary' type='submit'>
-                        Enviar Consulta
+                        Enviar
                     </Button>
                 </div>
             </Form>
@@ -191,7 +182,7 @@ const Contact = () => {
                     <Card.Text>
                         Para cualquier consulta o reserva, puedes contactarnos al siguiente número:
                     </Card.Text>
-                    <Card.Text className="fw-bold">Teléfono: +54 03814335687</Card.Text>
+                    <Card.Text className="fw-bold">Teléfono: +54 0381 578-3030</Card.Text>
                     <Button variant="primary" href="tel:+54 03814335687">Llamar</Button>
                 </Card.Body>
             </Card>

@@ -1,5 +1,5 @@
 .form-container {
-  background-image: url("../../../public/img/cornerstone-header-bg.jpg"); /* Reemplaza con la ruta de tu imagen */
+  background-image: url("src/assets/img/Hotel backgraund.jpg"); /* Reemplaza con la ruta de tu imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,4 +26,12 @@
 
 .logo-img {
   max-width: 250px; /* Tamaño máximo del logo */
+}
+
+h1{
+  margin-top: 30px;
+}
+
+h2{
+  margin-top: 30px;
 }
