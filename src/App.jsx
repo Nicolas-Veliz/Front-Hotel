@@ -6,7 +6,6 @@ import UserContext from './Context/UserContext';
 import InventoryContext from './Context/InventoryContext'
 
 
-
 function App() {
   return (
     <>
@@ -15,12 +14,9 @@ function App() {
         <InventoryContext>
           <Navbar />
           <Routes />
+          <Footer />
         </InventoryContext>
       </UserContext>
-      <div>
-        
-        <Footer />
-        </div>
     </>
   );
 }
