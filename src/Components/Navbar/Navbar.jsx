@@ -44,8 +44,8 @@ const Navegador = () => {
                             </Row>
                         </Container>
                         <Nav.Link className='action' href="#action7">Experiencias</Nav.Link>
-                        <Nav.Link className='action' href="#action8">Nosotros</Nav.Link>
-                        <Nav.Link className='action' href="#action9">Contactos</Nav.Link>
+                        <Nav.Link className='action' href="/AboutsUs">Nosotros</Nav.Link>
+                        <Nav.Link className='action' href="/Contact">Contactos</Nav.Link>
                     </Nav>
                     <button type="button" className="btn btn-outline-light">
                         <Nav.Link eventKey='link-1' href='/Record'>
