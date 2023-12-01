@@ -38,19 +38,23 @@ const Navegador = () => {
                         <Nav.Link className='action' href="#action6">Promociones</Nav.Link>
                         <Container>
                             <Row>
-                                <Col xs={6} md={3}>
-                                    <Image src="src\assets\img\Logo Hotel.jpg" rounded />
-                                </Col>
+                                <Container>
+                                    <p>
+                                        <a href='/' id='img'>
+                                            <img src='src\assets\img\Logo Hotel.jpg' />
+                                        </a>
+                                    </p>
+                                </Container>
                             </Row>
                         </Container>
                         <Nav.Link className='action' href="#action7">Experiencias</Nav.Link>
-                        <Nav.Link className='action' href="/AboutsUs">Nosotros</Nav.Link>
+                        <Nav.Link className='action' href="/About">Nosotros</Nav.Link>
                         <Nav.Link className='action' href="/Contact">Contactos</Nav.Link>
                     </Nav>
                     <button type="button" className="btn btn-outline-light">
                         <Nav.Link eventKey='link-1' href='/Record'>
-                        Acceder/Registrarse</Nav.Link>
-                        </button>
+                            Acceder/Registrarse</Nav.Link>
+                    </button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

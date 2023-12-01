@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Form, FloatingLabel, Col, Row, Button, Card } from 'react-bootstrap';
 import './styleContact.css';
 import Map from '../../Components/Map/Map'
