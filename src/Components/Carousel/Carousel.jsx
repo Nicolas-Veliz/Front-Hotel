@@ -37,7 +37,7 @@ function Carrusel() {
         <Carousel.Item>
           <img 
             className="d-block w-100"
-            src='src/assets/img/Restaurante Hotel.jpeg'
+            src='src/assets/img/Restaurante Hotel.jpg'
             alt='Restaurante'
           />
           <Carousel.Caption>
