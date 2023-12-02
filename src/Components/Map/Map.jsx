@@ -1,6 +1,9 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker} from 'https://cdn.esm.sh/react-leaflet';
+import { MapContainer, TileLayer, Marker} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+
+
+
 
 const Map = () => {
   return (

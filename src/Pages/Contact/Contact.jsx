@@ -31,7 +31,6 @@ const Contact = () => {
         onSubmit: (values) => {
             console.log('Valores de formik', values);
             // Agrega aquí la lógica para enviar el formulario
-            
         },
     });
 
